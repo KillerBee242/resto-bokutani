@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokutani - Restaurant Japonais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Shojumaru&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Bokutani</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="reservation-btn">
+            <a href="#reservation">Réserver</a>
+        </div>
+    </header>
+
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue chez Bokutani</h2>
+            <p>Une expérience culinaire japonaise authentique</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn primary">Découvrir notre menu</a>
+                <a href="#reservation" class="btn secondary">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="specialites" class="specialites">
+        <div class="container">
+            <h2 class="section-title">Nos Spécialités</h2>
+            <div class="specialites-grid">
+                <div class="specialite-card">
+                    <div class="specialite-img sushi"></div>
+                    <h3>Sushi</h3>
+                    <p>Nos sushis sont préparés avec le plus grand soin par nos chefs expérimentés.</p>
+                </div>
+                <div class="specialite-card">
+                    <div class="specialite-img ramen"></div>
+                    <h3>Ramen</h3>
+                    <p>Des bouillons mijotés pendant des heures pour une saveur incomparable.</p>
+                </div>
+                <div class="specialite-card">
+                    <div class="specialite-img tempura"></div>
+                    <h3>Tempura</h3>
+                    <p>Croustillant à l'extérieur, tendre à l'intérieur, notre tempura est un délice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Notre Histoire</h2>
+                    <p>Fondé en 2010, Bokutani est né de la passion du Chef Tanaka pour la cuisine japonaise traditionnelle. Après avoir étudié l'art culinaire à Tokyo pendant plus de 15 ans, il a décidé de partager son savoir-faire et sa passion avec le monde.</p>
+                    <p>Notre restaurant s'engage à utiliser uniquement des ingrédients frais et de saison, importés directement du Japon ou sourcés localement auprès de producteurs de confiance.</p>
+                    <a href="#histoire" class="btn primary">En savoir plus</a>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temoignages" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce que disent nos clients</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Une expérience culinaire exceptionnelle. Les saveurs sont authentiques et le service impeccable."</p>
+                    <div class="client">Marie D.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Le meilleur restaurant japonais que j'ai essayé ! Les sushis sont frais et délicieux."</p>
+                    <div class="client">Thomas L.</div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"L'ambiance est zen et apaisante, parfaite pour une soirée romantique ou entre amis."</p>
+                    <div class="client">Sophie M.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2 class="section-title">Réserver une table</h2>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Heure</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="guests">Nombre de personnes</label>
+                        <select id="guests" name="guests" required>
+                            <option value="1">1 personne</option>
+                            <option value="2">2 personnes</option>
+                            <option value="3">3 personnes</option>
+                            <option value="4">4 personnes</option>
+                            <option value="5">5 personnes</option>
+                            <option value="6">6 personnes ou plus</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optionnel)</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn primary">Réserver maintenant</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Bokutani</h2>
+                    <p>Une expérience culinaire japonaise authentique</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Heures d'ouverture</h3>
+                    <p>Lundi - Vendredi: 11h30 - 14h30, 18h30 - 22h30</p>
+                    <p>Samedi - Dimanche: 12h00 - 23h00</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>123 Rue de la Gastronomie</p>
+                    <p>75001 Paris, France</p>
+                    <p>Tél: 01 23 45 67 89</p>
+                    <p>Email: contact@bokutani.fr</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Bokutani. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
